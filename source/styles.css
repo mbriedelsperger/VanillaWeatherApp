@@ -75,6 +75,11 @@ li {
     float: left;
 }
 
+.forecast-time {
+    font-weight: bold;
+    font-size: 17px;
+}
+
 footer {
     margin-top: 50px;
     font-size: 13px;
