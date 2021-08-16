@@ -2,6 +2,7 @@ let apiKey = "2e53852c75255f55216c821fb2c12211";
 let units="metric";
 let city="chicago";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+let celsiusTemperature = null;
 
 axios.get(apiUrl).then(displayTemperature);
 
@@ -64,9 +65,18 @@ function handleSubmit(event) {
     let cityInputElement = document.querySelector("#city-input");
     search(cityInputElement.value);
   }
-  
+
   let form = document.querySelector("#search-form");
   form.addEventListener("submit", handleSubmit);
-    
+
+  function displayFahrenheitTemperature(event) {
+    event.preventDefault();
+    let fahrenheitTemperature = (celsiusTemperature * 9 / 5) + 32;
+    let temperature = document.querySelector("#temperature");
+    temperature.innerHTML = Math.round(fahrenheitTemperature);
+  }
+  
+    let fahrenheitLink = document.querySelector("#fahrenheit-link");
+    fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
   
