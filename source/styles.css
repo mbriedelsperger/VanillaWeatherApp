@@ -77,7 +77,15 @@ li {
 
 .forecast-time {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+forecast-temperature {
+    margin: 0 auto;
+    padding: 0px;
+    display: block;
 }
 
 footer {
