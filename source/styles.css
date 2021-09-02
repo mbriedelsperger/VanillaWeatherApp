@@ -12,16 +12,7 @@
     box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
     padding: 40px;
     color: #878787;
-    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);;
-}
-
-*, :after, :before {
-    box-sizing: border-box;
-}
-
-user agent stylesheet
-div {
-    display: block;
+    background: linear-gradient(to top, #f8cfec 0%, #ace0f9 100%);;
 }
 
 h1 {
@@ -37,13 +28,6 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
-}
-
-html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 ul {
@@ -62,30 +46,9 @@ li {
     line-height: 19px;
   }
 
-*, :after, :before {
-    box-sizing: border-box;
-}
-
-*, :after, :before {
-    box-sizing: border-box;
-}
-
 .temp {
     font-size: 30px;
     float: left;
-}
-
-.forecast-time {
-    font-weight: bold;
-    font-size: 27px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-forecast-temperature {
-    margin: 0 auto;
-    padding: 0px;
-    display: block;
 }
 
 footer {
@@ -97,12 +60,12 @@ strong {
     font-size: 35px;
 }
 
-btn {
+.btn {
 width: 50%;
 }
   
   .weather-temperature strong {
-    color: #878787;;
+    color: #878787;
     font-size: 50px;
     line-height: 1;
     font-weight: 400;
@@ -115,10 +78,46 @@ width: 50%;
   }
   
   .weather-temperature .active {
-    color: rgb(33, 33, 33);
+    color: #878787;
     cursor: default;
   }
   
   .weather-temperature .active:hover {
     text-decoration: none;
   }
+  .weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+    color: rg#878787;
+  }
+
+  .weather-app-wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+  }
+  
+  .weather-app {
+    padding: 20px;
+    border: 1px solid #dadde1;
+    border-radius: 5px;
+  }
+  
+  .overview {
+    margin-bottom: 20px;
+  }
+  
+  .weather-image{
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+    display: block;
+
+  }
+
+  .forecast-time {
+    font-size: 20px;
+    padding-bottom: 0px;
+  }
+  
+
+  
